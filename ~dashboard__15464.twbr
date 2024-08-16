@@ -1,0 +1,1863 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0711.1636                               -->
+<workbook original-version='18.1' source-build='2024.2.1 (20242.24.0711.1636)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='dashboard_17238310552130' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='bike_datos (datosciclo)' inline='true' name='federated.15vt3j60sl77rf1h9d1oz15uyfha' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='BigQuery' name='bigquery.1licsx71pe1zeh17ho08y0qienev'>
+            <connection CATALOG='cicloviajes-tecnica' EXECCATALOG='cicloviajes-tecnica' authentication='oauth' class='bigquery' connection-dialect='google-sql' project='cicloviajes-tecnica' schema='datosciclo' server-oauth='' username='berbesiag@gmail.com' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='bigquery.1licsx71pe1zeh17ho08y0qienev' name='bike_datos' table='[cicloviajes-tecnica.datosciclo].[bike_datos]' type='table'>
+          <columns>
+            <column datatype='date' date-parse-format='dd-MM-yyyy' name='stop_date_formatted' />
+            <column datatype='date' date-parse-format='dd-MM-yyyy' name='start_date_formatted' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='bigquery.1licsx71pe1zeh17ho08y0qienev' name='bike_datos' table='[cicloviajes-tecnica.datosciclo].[bike_datos]' type='table'>
+          <columns>
+            <column datatype='date' date-parse-format='dd-MM-yyyy' name='stop_date_formatted' />
+            <column datatype='date' date-parse-format='dd-MM-yyyy' name='start_date_formatted' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>bikeid</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[bikeid]</local-name>
+            <parent-name>[bike_datos]</parent-name>
+            <remote-alias>bikeid</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_FB3D7C1A80774531AB8BEA9182AAB45A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_station_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[start_station_id]</local-name>
+            <parent-name>[bike_datos]</parent-name>
+            <remote-alias>start_station_id</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_FB3D7C1A80774531AB8BEA9182AAB45A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_station_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[start_station_name]</local-name>
+            <parent-name>[bike_datos]</parent-name>
+            <remote-alias>start_station_name</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_FB3D7C1A80774531AB8BEA9182AAB45A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_station_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[end_station_id]</local-name>
+            <parent-name>[bike_datos]</parent-name>
+            <remote-alias>end_station_id</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_FB3D7C1A80774531AB8BEA9182AAB45A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_station_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[end_station_name]</local-name>
+            <parent-name>[bike_datos]</parent-name>
+            <remote-alias>end_station_name</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_FB3D7C1A80774531AB8BEA9182AAB45A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trip_time</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[trip_time]</local-name>
+            <parent-name>[bike_datos]</parent-name>
+            <remote-alias>trip_time</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_FB3D7C1A80774531AB8BEA9182AAB45A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_date_formatted</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[start_date_formatted]</local-name>
+            <parent-name>[bike_datos]</parent-name>
+            <remote-alias>start_date_formatted</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_FB3D7C1A80774531AB8BEA9182AAB45A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day_start</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[day_start]</local-name>
+            <parent-name>[bike_datos]</parent-name>
+            <remote-alias>day_start</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_FB3D7C1A80774531AB8BEA9182AAB45A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_moment</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[start_moment]</local-name>
+            <parent-name>[bike_datos]</parent-name>
+            <remote-alias>start_moment</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_FB3D7C1A80774531AB8BEA9182AAB45A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stop_date_formatted</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[stop_date_formatted]</local-name>
+            <parent-name>[bike_datos]</parent-name>
+            <remote-alias>stop_date_formatted</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_FB3D7C1A80774531AB8BEA9182AAB45A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day_stop</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[day_stop]</local-name>
+            <parent-name>[bike_datos]</parent-name>
+            <remote-alias>day_stop</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_FB3D7C1A80774531AB8BEA9182AAB45A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stop_moment</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[stop_moment]</local-name>
+            <parent-name>[bike_datos]</parent-name>
+            <remote-alias>stop_moment</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_FB3D7C1A80774531AB8BEA9182AAB45A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>birth_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[birth_year]</local-name>
+            <parent-name>[bike_datos]</parent-name>
+            <remote-alias>birth_year</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_FB3D7C1A80774531AB8BEA9182AAB45A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>edad_actual</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[edad_actual]</local-name>
+            <parent-name>[bike_datos]</parent-name>
+            <remote-alias>edad_actual</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_FB3D7C1A80774531AB8BEA9182AAB45A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[bike_datos]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_FB3D7C1A80774531AB8BEA9182AAB45A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>usertype</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[usertype]</local-name>
+            <parent-name>[bike_datos]</parent-name>
+            <remote-alias>usertype</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_FB3D7C1A80774531AB8BEA9182AAB45A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.15vt3j60sl77rf1h9d1oz15uyfha].[usr:Calculation_1088182311365050373:qk]&quot;' value='Máximo (min)' />
+          <alias key='&quot;[federated.15vt3j60sl77rf1h9d1oz15uyfha].[usr:Calculation_1088182311365091334:qk]&quot;' value='Mínimo (min)' />
+          <alias key='&quot;[federated.15vt3j60sl77rf1h9d1oz15uyfha].[usr:Calculation_1088182311365124103:qk]&quot;' value='Promedio (min)' />
+          <alias key='&quot;[federated.15vt3j60sl77rf1h9d1oz15uyfha].[usr:Calculation_1088182311365148680:qk]&quot;' value='Desviación Standard (min)' />
+        </aliases>
+      </column>
+      <column caption='duracion' datatype='integer' name='[Calculation_1088182311363497987]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(INT(LEFT([trip_time], 2)) * 3600) + &#13;&#10;(INT(MID([trip_time], 4, 2)) * 60) + &#13;&#10;INT(RIGHT([trip_time], 2))' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Edad Actual (agrupación)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[edad_actual]' peg='0' size='4.73' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='bike_datos' datatype='table' name='[__tableau_internal_object_id__].[bike_datos_FB3D7C1A80774531AB8BEA9182AAB45A]' role='measure' type='quantitative' />
+      <column caption='Bikeid' datatype='integer' name='[bikeid]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Birth Year' datatype='integer' name='[birth_year]' role='dimension' type='quantitative' />
+      <column caption='Day Start' datatype='string' name='[day_start]' role='dimension' type='nominal' />
+      <column caption='Day Stop' datatype='string' name='[day_stop]' role='dimension' type='nominal' />
+      <column caption='Edad Actual' datatype='integer' name='[edad_actual]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='End Station Id' datatype='integer' name='[end_station_id]' role='dimension' type='ordinal' />
+      <column caption='End Station Name' datatype='string' name='[end_station_name]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column aggregation='Count' caption='Start Date Formatted' datatype='date' datatype-customized='true' name='[start_date_formatted]' role='dimension' type='ordinal' />
+      <column caption='Start Moment' datatype='string' name='[start_moment]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Start Station Id' datatype='integer' name='[start_station_id]' role='dimension' type='ordinal' />
+      <column caption='Start Station Name' datatype='string' name='[start_station_name]' role='dimension' type='nominal' />
+      <column aggregation='Count' caption='Stop Date Formatted' datatype='date' datatype-customized='true' name='[stop_date_formatted]' role='dimension' type='ordinal' />
+      <column caption='Stop Moment' datatype='string' name='[stop_moment]' role='dimension' type='nominal' />
+      <column caption='Trip Time' datatype='string' name='[trip_time]' role='dimension' type='nominal' />
+      <column caption='Usertype' datatype='string' name='[usertype]' role='dimension' type='nominal' />
+      <column-instance column='[start_date_formatted]' derivation='Year-Trunc' name='[tyr:start_date_formatted:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[start_date_formatted]' derivation='Year' name='[yr:start_date_formatted:ok]' pivot='key' type='ordinal' />
+      <group caption='Acción (Day Start)' hidden='true' name='[Action (Day Start)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[day_start]' />
+        </groupfilter>
+      </group>
+      <group caption='Acción (Usertype)' hidden='true' name='[Action (Usertype)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[usertype]' />
+        </groupfilter>
+      </group>
+      <group caption='Acción (AÑO(Start Date Formatted))' hidden='true' name='[Action (YEAR(Start Date Formatted))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[yr:start_date_formatted:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Acción (AÑO(Start Date Formatted),AÑO(Start Date Formatted))' hidden='true' name='[Action (YEAR(Start Date Formatted),YEAR(Start Date Formatted))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[yr:start_date_formatted:ok]' />
+          <groupfilter function='level-members' level='[tyr:start_date_formatted:ok]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='es_ES' class='hyper' dbname='C:/Users/Oberb/OneDrive/Documentos/Laboratoria/bike_datos.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table'>
+            <columns>
+              <column datatype='date' date-parse-format='dd-MM-yyyy' name='stop_date_formatted' />
+              <column datatype='date' date-parse-format='dd-MM-yyyy' name='start_date_formatted' />
+            </columns>
+          </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table'>
+            <columns>
+              <column datatype='date' date-parse-format='dd-MM-yyyy' name='stop_date_formatted' />
+              <column datatype='date' date-parse-format='dd-MM-yyyy' name='start_date_formatted' />
+            </columns>
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>bikeid</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[bikeid]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bikeid</remote-alias>
+              <ordinal>0</ordinal>
+              <family>bike_datos</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4511</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start_station_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[start_station_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>start_station_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>bike_datos</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1360</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start_station_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[start_station_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>start_station_name</remote-alias>
+              <ordinal>2</ordinal>
+              <family>bike_datos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1410</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>end_station_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[end_station_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>end_station_id</remote-alias>
+              <ordinal>3</ordinal>
+              <family>bike_datos</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1420</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>end_station_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[end_station_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>end_station_name</remote-alias>
+              <ordinal>4</ordinal>
+              <family>bike_datos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1443</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trip_time</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[trip_time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trip_time</remote-alias>
+              <ordinal>5</ordinal>
+              <family>bike_datos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10412</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start_date_formatted</remote-name>
+              <remote-type>7</remote-type>
+              <local-name>[start_date_formatted]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>start_date_formatted</remote-alias>
+              <ordinal>6</ordinal>
+              <family>bike_datos</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>day_start</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[day_start]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>day_start</remote-alias>
+              <ordinal>7</ordinal>
+              <family>bike_datos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start_moment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[start_moment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>start_moment</remote-alias>
+              <ordinal>8</ordinal>
+              <family>bike_datos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stop_date_formatted</remote-name>
+              <remote-type>7</remote-type>
+              <local-name>[stop_date_formatted]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stop_date_formatted</remote-alias>
+              <ordinal>9</ordinal>
+              <family>bike_datos</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>day_stop</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[day_stop]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>day_stop</remote-alias>
+              <ordinal>10</ordinal>
+              <family>bike_datos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stop_moment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[stop_moment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stop_moment</remote-alias>
+              <ordinal>11</ordinal>
+              <family>bike_datos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>birth_year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[birth_year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>birth_year</remote-alias>
+              <ordinal>12</ordinal>
+              <family>bike_datos</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>67</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>edad_actual</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[edad_actual]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>edad_actual</remote-alias>
+              <ordinal>13</ordinal>
+              <family>bike_datos</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>67</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>14</ordinal>
+              <family>bike_datos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>usertype</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[usertype]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>usertype</remote-alias>
+              <ordinal>15</ordinal>
+              <family>bike_datos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Costa Rica&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='bike_datos' id='bike_datos_FB3D7C1A80774531AB8BEA9182AAB45A'>
+            <properties context=''>
+              <relation connection='bigquery.1licsx71pe1zeh17ho08y0qienev' name='bike_datos' table='[cicloviajes-tecnica.datosciclo].[bike_datos]' type='table'>
+                <columns>
+                  <column datatype='date' date-parse-format='dd-MM-yyyy' name='stop_date_formatted' />
+                  <column datatype='date' date-parse-format='dd-MM-yyyy' name='start_date_formatted' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table'>
+                <columns>
+                  <column datatype='date' date-parse-format='dd-MM-yyyy' name='stop_date_formatted' />
+                  <column datatype='date' date-parse-format='dd-MM-yyyy' name='start_date_formatted' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.15vt3j60sl77rf1h9d1oz15uyfha'>
+      <datasources>
+        <datasource caption='bike_datos (datosciclo)' name='federated.15vt3j60sl77rf1h9d1oz15uyfha' />
+      </datasources>
+      <datasource-dependencies datasource='federated.15vt3j60sl77rf1h9d1oz15uyfha'>
+        <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+        <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[none:gender:nk]'>
+        <groupfilter function='member' level='[none:gender:nk]' member='&quot;female&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+        <target field='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[none:gender:nk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filtro 1 (generado)' name='[Action1_3852B65512E3458BB21329FE74765A18]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard' type='sheet' worksheet='Año' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard' />
+      </command>
+    </action>
+    <action caption='Filtro 2 (generado)' name='[Action2_DCA95C64968548E395930EAFC3AA40EC]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard' type='sheet' worksheet='Día de la semana' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard' />
+      </command>
+    </action>
+    <action caption='Filtro 3 (generado)' name='[Action3_45EDEF54B5084F85B30B53FE381AECF3]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard' type='sheet' worksheet='Tendencias' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard' />
+      </command>
+    </action>
+    <action caption='Filtro 4 (generado)' name='[Action4_1C77856F2B124966B0B2A4CD0AE510AA]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard' type='sheet' worksheet='Total Viajes' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard' />
+      </command>
+    </action>
+    <action caption='Filtro 5 (generado)' name='[Action5_290870E23D504507BDF3954D122779AA]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard' type='sheet' worksheet='Edad' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard' />
+      </command>
+    </action>
+    <action caption='Filtro 6 (generado)' name='[Action6_92794EAA65834DC2A43F614008FDCC6E]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard' type='sheet' worksheet='Suscripción' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard' />
+      </command>
+    </action>
+    <action caption='Filtro 7 (generado)' name='[Action7_23A07EF22B8D4B44B7C519AA6897C87D]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard' type='sheet' worksheet='Extra2' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Año'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#f17b79'>&lt;</run>
+            <run bold='true' fontcolor='#f17b79'>Sheet Name</run>
+            <run bold='true' fontcolor='#f17b79'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bike_datos (datosciclo)' name='federated.15vt3j60sl77rf1h9d1oz15uyfha' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15vt3j60sl77rf1h9d1oz15uyfha'>
+            <column caption='Bikeid' datatype='integer' name='[bikeid]' role='measure' type='quantitative' />
+            <column-instance column='[bikeid]' derivation='Count' name='[cnt:bikeid:qk]' pivot='key' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column aggregation='Count' caption='Start Date Formatted' datatype='date' datatype-customized='true' name='[start_date_formatted]' role='dimension' type='ordinal' />
+            <column caption='Usertype' datatype='string' name='[usertype]' role='dimension' type='nominal' />
+            <column-instance column='[start_date_formatted]' derivation='Year' name='[yr:start_date_formatted:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[Action (Usertype)]'>
+            <groupfilter function='level-members' level='[usertype]' user:ui-action-filter='[Action6_92794EAA65834DC2A43F614008FDCC6E]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.15vt3j60sl77rf1h9d1oz15uyfha].[none:gender:nk]</column>
+            <column>[federated.15vt3j60sl77rf1h9d1oz15uyfha].[Action (Usertype)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='71' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[cnt:bikeid:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[cnt:bikeid:qk]' palette='purple_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[yr:start_date_formatted:ok]' />
+              <color column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[cnt:bikeid:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='size' value='5.5472970008850098' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{1304D100-D69F-4A9B-9EC9-1F52A8F94F4F}' />
+    </worksheet>
+    <worksheet name='Crecimiento'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#f17b79'>&lt;</run>
+            <run bold='true' fontcolor='#f17b79'>Sheet Name</run>
+            <run bold='true' fontcolor='#f17b79'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bike_datos (datosciclo)' name='federated.15vt3j60sl77rf1h9d1oz15uyfha' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15vt3j60sl77rf1h9d1oz15uyfha'>
+            <column caption='Bikeid' datatype='integer' name='[bikeid]' role='measure' type='quantitative' />
+            <column-instance column='[bikeid]' derivation='Count' name='[cnt:bikeid:qk]' pivot='key' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column aggregation='Count' caption='Start Date Formatted' datatype='date' datatype-customized='true' name='[start_date_formatted]' role='dimension' type='ordinal' />
+            <column-instance column='[start_date_formatted]' derivation='Day-Trunc' name='[tdy:start_date_formatted:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[start_date_formatted]' derivation='Year-Trunc' name='[tyr:start_date_formatted:ok]' pivot='key' type='ordinal' />
+            <column caption='Usertype' datatype='string' name='[usertype]' role='dimension' type='nominal' />
+            <column-instance column='[start_date_formatted]' derivation='Year' name='[yr:start_date_formatted:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[Action (Usertype)]'>
+            <groupfilter function='level-members' level='[usertype]' user:ui-action-filter='[Action6_92794EAA65834DC2A43F614008FDCC6E]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[Action (YEAR(Start Date Formatted),YEAR(Start Date Formatted))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_3852B65512E3458BB21329FE74765A18]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[yr:start_date_formatted:ok]' />
+              <groupfilter function='level-members' level='[tyr:start_date_formatted:ok]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.15vt3j60sl77rf1h9d1oz15uyfha].[Action (YEAR(Start Date Formatted),YEAR(Start Date Formatted))]</column>
+            <column>[federated.15vt3j60sl77rf1h9d1oz15uyfha].[none:gender:nk]</column>
+            <column>[federated.15vt3j60sl77rf1h9d1oz15uyfha].[Action (Usertype)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[tdy:start_date_formatted:qk]' value='28' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#d4a6c8' />
+                <format attr='mark-transparency' value='91' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.15vt3j60sl77rf1h9d1oz15uyfha].[cnt:bikeid:qk]</rows>
+        <cols>[federated.15vt3j60sl77rf1h9d1oz15uyfha].[tdy:start_date_formatted:qk]</cols>
+      </table>
+      <simple-id uuid='{A9881C10-A14D-4468-AAC2-DB525376DD70}' />
+    </worksheet>
+    <worksheet name='Día de la semana'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#f17b79'>&lt;</run>
+            <run bold='true' fontcolor='#f17b79'>Sheet Name</run>
+            <run bold='true' fontcolor='#f17b79'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bike_datos (datosciclo)' name='federated.15vt3j60sl77rf1h9d1oz15uyfha' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15vt3j60sl77rf1h9d1oz15uyfha'>
+            <column-instance column='[bikeid]' derivation='Avg' name='[avg:bikeid:qk]' pivot='key' type='quantitative' />
+            <column caption='Bikeid' datatype='integer' name='[bikeid]' role='measure' type='quantitative' />
+            <column-instance column='[bikeid]' derivation='Count' name='[cnt:bikeid:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[day_start]' derivation='Count' name='[cnt:day_start:qk]' pivot='key' type='quantitative' />
+            <column caption='Day Start' datatype='string' name='[day_start]' role='dimension' type='nominal' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[day_start]' derivation='None' name='[none:day_start:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column caption='Usertype' datatype='string' name='[usertype]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[Action (Usertype)]'>
+            <groupfilter function='level-members' level='[usertype]' user:ui-action-filter='[Action6_92794EAA65834DC2A43F614008FDCC6E]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.15vt3j60sl77rf1h9d1oz15uyfha].[none:gender:nk]</column>
+            <column>[federated.15vt3j60sl77rf1h9d1oz15uyfha].[Action (Usertype)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[avg:bikeid:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='alternate-text' field='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[avg:bikeid:qk]' value='' />
+            <format attr='display-alternate-text' field='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[avg:bikeid:qk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <text column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[none:day_start:nk]' />
+              <size column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[cnt:bikeid:qk]' />
+              <text column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[cnt:day_start:qk]' />
+              <text column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[avg:bikeid:qk]' />
+              <color column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[none:day_start:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{A094E5FE-16B1-4F30-B1DF-ADA482248377}' />
+    </worksheet>
+    <worksheet name='Edad'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#f17b79'>&lt;</run>
+            <run bold='true' fontcolor='#f17b79'>Sheet Name</run>
+            <run bold='true' fontcolor='#f17b79'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bike_datos (datosciclo)' name='federated.15vt3j60sl77rf1h9d1oz15uyfha' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15vt3j60sl77rf1h9d1oz15uyfha'>
+            <column aggregation='None' datatype='integer' name='[Edad Actual (agrupación)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[edad_actual]' peg='0' size='4.73' />
+            </column>
+            <column-instance column='[edad_actual]' derivation='Count' name='[cnt:edad_actual:qk]' pivot='key' type='quantitative' />
+            <column caption='Edad Actual' datatype='integer' name='[edad_actual]' role='measure' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[Edad Actual (agrupación)]' derivation='None' name='[none:Edad Actual (agrupación):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column caption='Usertype' datatype='string' name='[usertype]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[Action (Usertype)]'>
+            <groupfilter function='level-members' level='[usertype]' user:ui-action-filter='[Action6_92794EAA65834DC2A43F614008FDCC6E]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.15vt3j60sl77rf1h9d1oz15uyfha].[none:gender:nk]</column>
+            <column>[federated.15vt3j60sl77rf1h9d1oz15uyfha].[Action (Usertype)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[none:gender:nk]' value='Género'>
+              <formatted-text>
+                <run bold='true' fontcolor='#f17b79' fontsize='15'>Género</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#f17b79' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.15vt3j60sl77rf1h9d1oz15uyfha].[cnt:edad_actual:qk]</rows>
+        <cols>[federated.15vt3j60sl77rf1h9d1oz15uyfha].[none:Edad Actual (agrupación):qk]</cols>
+        <show-full-range>
+          <column>[federated.15vt3j60sl77rf1h9d1oz15uyfha].[Edad Actual (agrupación)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{995E8F16-E63D-4AEA-B22B-E4F9291E14D7}' />
+    </worksheet>
+    <worksheet name='Extra1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#f17b79'>Día y momento del día preferido para salir, según promedio de edad</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bike_datos (datosciclo)' name='federated.15vt3j60sl77rf1h9d1oz15uyfha' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15vt3j60sl77rf1h9d1oz15uyfha'>
+            <column-instance column='[edad_actual]' derivation='Avg' name='[avg:edad_actual:qk]' pivot='key' type='quantitative' />
+            <column caption='Bikeid' datatype='integer' name='[bikeid]' role='measure' type='quantitative' />
+            <column-instance column='[bikeid]' derivation='Count' name='[cnt:bikeid:qk]' pivot='key' type='quantitative' />
+            <column caption='Day Start' datatype='string' name='[day_start]' role='dimension' type='nominal' />
+            <column caption='Edad Actual' datatype='integer' name='[edad_actual]' role='measure' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[day_start]' derivation='None' name='[none:day_start:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[start_moment]' derivation='None' name='[none:start_moment:nk]' pivot='key' type='nominal' />
+            <column caption='Start Moment' datatype='string' name='[start_moment]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.15vt3j60sl77rf1h9d1oz15uyfha].[none:gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[avg:edad_actual:qk]' value='n#,##0;-#,##0' />
+            <format attr='width' field='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[none:day_start:nk]' value='74' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[none:start_moment:nk]' value='64' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[avg:edad_actual:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[avg:edad_actual:qk]' />
+              <text column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[avg:edad_actual:qk]' />
+              <lod column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[cnt:bikeid:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.15vt3j60sl77rf1h9d1oz15uyfha].[none:start_moment:nk]</rows>
+        <cols>[federated.15vt3j60sl77rf1h9d1oz15uyfha].[none:day_start:nk]</cols>
+      </table>
+      <simple-id uuid='{F611CF1E-9164-4480-88E8-A7351E400D5E}' />
+    </worksheet>
+    <worksheet name='Extra2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#f17b79'>Estaciones más populares para inicio de viaje</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bike_datos (datosciclo)' name='federated.15vt3j60sl77rf1h9d1oz15uyfha' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15vt3j60sl77rf1h9d1oz15uyfha'>
+            <_.fcp.ObjectModelTableType.true...column caption='bike_datos' datatype='table' name='[__tableau_internal_object_id__].[bike_datos_FB3D7C1A80774531AB8BEA9182AAB45A]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[bike_datos_FB3D7C1A80774531AB8BEA9182AAB45A]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:bike_datos_FB3D7C1A80774531AB8BEA9182AAB45A:qk]' pivot='key' type='quantitative' />
+            <column caption='Bikeid' datatype='integer' name='[bikeid]' role='measure' type='quantitative' />
+            <column-instance column='[bikeid]' derivation='Count' name='[cnt:bikeid:qk]' pivot='key' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[start_station_name]' derivation='None' name='[none:start_station_name:nk]' pivot='key' type='nominal' />
+            <column caption='Start Station Name' datatype='string' name='[start_station_name]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='bike_datos' datatype='integer' name='[__tableau_internal_object_id__].[bike_datos_FB3D7C1A80774531AB8BEA9182AAB45A]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[none:start_station_name:nk]'>
+            <groupfilter expression='COUNT([bikeid]) &gt; 70000' function='filter' user:ui-filter-by-field='true' user:ui-marker='filter-by'>
+              <groupfilter function='level-members' level='[none:start_station_name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.15vt3j60sl77rf1h9d1oz15uyfha].[none:gender:nk]</column>
+            <column>[federated.15vt3j60sl77rf1h9d1oz15uyfha].[none:start_station_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[cnt:bikeid:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[cnt:bikeid:qk]' palette='purple_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[cnt:bikeid:qk]' />
+              <color column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[cnt:bikeid:qk]' />
+              <text column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[none:start_station_name:nk]' />
+              <text column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[__tableau_internal_object_id__].[cnt:bike_datos_FB3D7C1A80774531AB8BEA9182AAB45A:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E5DF3DF0-1289-4C15-86B1-7E4FCEC153F2}' />
+    </worksheet>
+    <worksheet name='Suscripción'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#f17b79'>Tipo de Suscripción</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bike_datos (datosciclo)' name='federated.15vt3j60sl77rf1h9d1oz15uyfha' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15vt3j60sl77rf1h9d1oz15uyfha'>
+            <column-instance column='[usertype]' derivation='Count' name='[cnt:usertype:qk]' pivot='key' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[usertype]' derivation='None' name='[none:usertype:nk]' pivot='key' type='nominal' />
+            <column caption='Usertype' datatype='string' name='[usertype]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.15vt3j60sl77rf1h9d1oz15uyfha].[none:gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[cnt:usertype:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[cnt:usertype:qk]' palette='purple_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[cnt:usertype:qk]' />
+              <text column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[cnt:usertype:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.15vt3j60sl77rf1h9d1oz15uyfha].[none:usertype:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{BF253C16-FA7F-4D82-9AC1-4DF40C2634E8}' />
+    </worksheet>
+    <worksheet name='Tendencias'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#f17b79' fontsize='18'>&lt;</run>
+            <run bold='true' fontcolor='#f17b79' fontsize='18'>Sheet Name</run>
+            <run bold='true' fontcolor='#f17b79' fontsize='18'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bike_datos (datosciclo)' name='federated.15vt3j60sl77rf1h9d1oz15uyfha' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15vt3j60sl77rf1h9d1oz15uyfha'>
+            <column caption='duracion' datatype='integer' name='[Calculation_1088182311363497987]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='(INT(LEFT([trip_time], 2)) * 3600) + &#13;&#10;(INT(MID([trip_time], 4, 2)) * 60) + &#13;&#10;INT(RIGHT([trip_time], 2))' />
+            </column>
+            <column caption='MAX([duracion])/60' datatype='real' name='[Calculation_1088182311365050373]' role='measure' type='quantitative' user:unnamed='Tendencias'>
+              <calculation class='tableau' formula='MAX([Calculation_1088182311363497987])/60' />
+            </column>
+            <column caption='MIN([duracion])/60' datatype='real' name='[Calculation_1088182311365091334]' role='measure' type='quantitative' user:unnamed='Tendencias'>
+              <calculation class='tableau' formula='MIN([Calculation_1088182311363497987])/60' />
+            </column>
+            <column caption='AVG([duracion])/60' datatype='real' name='[Calculation_1088182311365124103]' role='measure' type='quantitative' user:unnamed='Tendencias'>
+              <calculation class='tableau' formula='AVG([Calculation_1088182311363497987])/60' />
+            </column>
+            <column caption='STDEV([duracion])/60' datatype='real' name='[Calculation_1088182311365148680]' role='measure' type='quantitative' user:unnamed='Tendencias'>
+              <calculation class='tableau' formula='STDEV([Calculation_1088182311363497987])/60' />
+            </column>
+            <column-instance column='[Calculation_1088182311363497987]' derivation='Attribute' name='[attr:Calculation_1088182311363497987:qk]' pivot='key' type='quantitative' />
+            <column caption='Bikeid' datatype='integer' name='[bikeid]' role='measure' type='quantitative' />
+            <column-instance column='[bikeid]' derivation='Count' name='[cnt:bikeid:qk]' pivot='key' type='quantitative' />
+            <column caption='Day Start' datatype='string' name='[day_start]' role='dimension' type='nominal' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[day_start]' derivation='None' name='[none:day_start:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column aggregation='Count' caption='Start Date Formatted' datatype='date' datatype-customized='true' name='[start_date_formatted]' role='dimension' type='ordinal' />
+            <column-instance column='[Calculation_1088182311363497987]' derivation='Stdev' name='[std:Calculation_1088182311363497987:qk]' pivot='key' type='quantitative' />
+            <column caption='Trip Time' datatype='string' name='[trip_time]' role='dimension' type='nominal' />
+            <column caption='Usertype' datatype='string' name='[usertype]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1088182311365050373]' derivation='User' name='[usr:Calculation_1088182311365050373:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1088182311365091334]' derivation='User' name='[usr:Calculation_1088182311365091334:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1088182311365124103]' derivation='User' name='[usr:Calculation_1088182311365124103:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1088182311365148680]' derivation='User' name='[usr:Calculation_1088182311365148680:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[start_date_formatted]' derivation='Year' name='[yr:start_date_formatted:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.15vt3j60sl77rf1h9d1oz15uyfha].[usr:Calculation_1088182311365050373:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.15vt3j60sl77rf1h9d1oz15uyfha].[usr:Calculation_1088182311365091334:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.15vt3j60sl77rf1h9d1oz15uyfha].[usr:Calculation_1088182311365124103:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.15vt3j60sl77rf1h9d1oz15uyfha].[usr:Calculation_1088182311365148680:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.15vt3j60sl77rf1h9d1oz15uyfha].[usr:Calculation_1088182311365050373:qk]&quot;</bucket>
+              <bucket>&quot;[federated.15vt3j60sl77rf1h9d1oz15uyfha].[usr:Calculation_1088182311365091334:qk]&quot;</bucket>
+              <bucket>&quot;[federated.15vt3j60sl77rf1h9d1oz15uyfha].[usr:Calculation_1088182311365124103:qk]&quot;</bucket>
+              <bucket>&quot;[federated.15vt3j60sl77rf1h9d1oz15uyfha].[std:Calculation_1088182311363497987:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[Action (Day Start)]'>
+            <groupfilter function='level-members' level='[day_start]' user:ui-action-filter='[Action2_DCA95C64968548E395930EAFC3AA40EC]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[Action (Usertype)]'>
+            <groupfilter function='level-members' level='[usertype]' user:ui-action-filter='[Action6_92794EAA65834DC2A43F614008FDCC6E]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[Action (YEAR(Start Date Formatted))]'>
+            <groupfilter function='level-members' level='[yr:start_date_formatted:ok]' user:ui-action-filter='[Action1_3852B65512E3458BB21329FE74765A18]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.15vt3j60sl77rf1h9d1oz15uyfha].[:Measure Names]</column>
+            <column>[federated.15vt3j60sl77rf1h9d1oz15uyfha].[Action (YEAR(Start Date Formatted))]</column>
+            <column>[federated.15vt3j60sl77rf1h9d1oz15uyfha].[Action (Day Start)]</column>
+            <column>[federated.15vt3j60sl77rf1h9d1oz15uyfha].[none:gender:nk]</column>
+            <column>[federated.15vt3j60sl77rf1h9d1oz15uyfha].[Action (Usertype)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[:Measure Names]' value='111' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[none:day_start:nk]' value='88' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[cnt:bikeid:qk]' num-steps='2' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#a2631b</color>
+                <color>#ab7334</color>
+                <color>#b48550</color>
+                <color>#bd986e</color>
+                <color>#c6ac8f</color>
+                <color>#cfc2b2</color>
+                <color>#d9d9d9</color>
+                <color>#c8bbb3</color>
+                <color>#b8a090</color>
+                <color>#a88771</color>
+                <color>#987056</color>
+                <color>#885b3e</color>
+                <color>#78492a</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[Multiple Values]' />
+              <lod column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[attr:Calculation_1088182311363497987:qk]' />
+              <color column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[cnt:bikeid:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.15vt3j60sl77rf1h9d1oz15uyfha].[none:day_start:nk]</rows>
+        <cols>[federated.15vt3j60sl77rf1h9d1oz15uyfha].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{7BC5A40C-49EA-47C7-854E-0CE0441BD3E9}' />
+    </worksheet>
+    <worksheet name='Total Viajes'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#e15759' fontsize='18'>&lt;</run>
+            <run bold='true' fontcolor='#e15759' fontsize='18'>Sheet Name</run>
+            <run bold='true' fontcolor='#e15759' fontsize='18'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bike_datos (datosciclo)' name='federated.15vt3j60sl77rf1h9d1oz15uyfha' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15vt3j60sl77rf1h9d1oz15uyfha'>
+            <column caption='Bikeid' datatype='integer' name='[bikeid]' role='measure' type='quantitative' />
+            <column-instance column='[bikeid]' derivation='Count' name='[cnt:bikeid:qk]' pivot='key' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column aggregation='Count' caption='Start Date Formatted' datatype='date' datatype-customized='true' name='[start_date_formatted]' role='dimension' type='ordinal' />
+            <column-instance column='[start_date_formatted]' derivation='Year-Trunc' name='[tyr:start_date_formatted:ok]' pivot='key' type='ordinal' />
+            <column caption='Usertype' datatype='string' name='[usertype]' role='dimension' type='nominal' />
+            <column-instance column='[start_date_formatted]' derivation='Year' name='[yr:start_date_formatted:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[Action (Usertype)]'>
+            <groupfilter function='level-members' level='[usertype]' user:ui-action-filter='[Action6_92794EAA65834DC2A43F614008FDCC6E]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[Action (YEAR(Start Date Formatted),YEAR(Start Date Formatted))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1_3852B65512E3458BB21329FE74765A18]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[yr:start_date_formatted:ok]' />
+              <groupfilter function='level-members' level='[tyr:start_date_formatted:ok]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.15vt3j60sl77rf1h9d1oz15uyfha].[Action (YEAR(Start Date Formatted),YEAR(Start Date Formatted))]</column>
+            <column>[federated.15vt3j60sl77rf1h9d1oz15uyfha].[none:gender:nk]</column>
+            <column>[federated.15vt3j60sl77rf1h9d1oz15uyfha].[Action (Usertype)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' data-class='subtotal' value='#e15759' />
+            <format attr='font-size' data-class='total' scope='cols' value='10' />
+            <format attr='font-size' data-class='subtotal' scope='cols' value='24' />
+            <format attr='font-weight' data-class='subtotal' scope='cols' value='normal' />
+            <format attr='font-size' field='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[cnt:bikeid:qk]' value='18' />
+            <format attr='font-weight' field='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[cnt:bikeid:qk]' value='bold' />
+            <format attr='vertical-align' field='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[cnt:bikeid:qk]' value='top' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='color' data-class='subtotal' value='#f17b79' />
+            <format attr='font-weight' data-class='subtotal' value='bold' />
+            <format attr='font-size' data-class='subtotal' value='16' />
+            <format attr='font-size' data-class='total' scope='rows' value='28' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' scope='rows' value='15' />
+            <format attr='font-size' scope='cols' value='20' />
+            <format attr='font-weight' scope='cols' value='bold' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='3' />
+            <format attr='border-color' value='#d37295' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#faf5f0' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='font-size' value='15' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[cnt:bikeid:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{A8C9DACC-333C-4D0A-95C5-DC028DEBAC8A}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard'>
+      <style />
+      <size maxheight='850' maxwidth='1630' minheight='850' minwidth='1630' preset-index='0' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='bike_datos (datosciclo)' name='federated.15vt3j60sl77rf1h9d1oz15uyfha' />
+      </datasources>
+      <datasource-dependencies datasource='federated.15vt3j60sl77rf1h9d1oz15uyfha'>
+        <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+        <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98118' id='37' param='horz' type-v2='layout-flow' w='99018' x='491' y='941'>
+            <zone h='98118' id='34' param='horz' type-v2='layout-flow' w='99018' x='491' y='941'>
+              <zone h='98118' id='19' param='horz' type-v2='layout-flow' w='99018' x='491' y='941'>
+                <zone h='98118' id='13' type-v2='layout-basic' w='99018' x='491' y='941'>
+                  <zone h='98118' id='9' param='horz' type-v2='layout-flow' w='39237' x='491' y='941'>
+                    <zone h='98118' id='7' type-v2='layout-basic' w='39237' x='491' y='941'>
+                      <zone h='33288' id='1' name='Día de la semana' w='39237' x='491' y='33298'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='18791' id='5' name='Año' w='39237' x='491' y='14507'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='13566' id='10' name='Total Viajes' w='39237' x='491' y='941'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='32473' id='12' name='Edad' w='39237' x='491' y='66586'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                  <zone h='29358' id='6' name='Tendencias' w='29890' x='39728' y='69701'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='15765' id='16' name='Edad' param='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[none:gender:nk]' type-v2='filter' values='database' w='29890' x='39728' y='941'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='52995' id='11' name='Crecimiento' w='29889' x='39728' y='16706'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='15765' id='17' name='Suscripción' w='29891' x='69618' y='941'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='52995' id='32' name='Extra1' w='29892' x='69617' y='16706'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='29358' id='35' name='Extra2' w='29891' x='69618' y='69701'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2150' minheight='2150' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='41' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98118' id='40' param='vert' type-v2='layout-flow' w='99018' x='491' y='941'>
+                <zone fixed-size='107' h='13566' id='10' is-fixed='true' name='Total Viajes' w='39237' x='491' y='941'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='126' h='15765' id='17' is-fixed='true' name='Suscripción' w='29891' x='69618' y='941'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='152' h='18791' id='5' is-fixed='true' name='Año' w='39237' x='491' y='14507'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='52995' id='11' is-fixed='true' name='Crecimiento' w='29889' x='39728' y='16706'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='52995' id='32' is-fixed='true' name='Extra1' w='29892' x='69617' y='16706'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='275' h='33288' id='1' is-fixed='true' name='Día de la semana' w='39237' x='491' y='33298'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='15765' id='16' mode='checkdropdown' name='Edad' param='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[none:gender:nk]' type-v2='filter' values='database' w='29890' x='39728' y='941'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='268' h='32473' id='12' is-fixed='true' name='Edad' w='39237' x='491' y='66586'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='242' h='29358' id='6' is-fixed='true' name='Tendencias' w='29890' x='39728' y='69701'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='242' h='29358' id='35' is-fixed='true' name='Extra2' w='29891' x='69618' y='69701'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A1FF8457-6C04-47A6-9ED1-804BE9A0F85E}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Día de la semana'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[none:day_start:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{209B9D01-D60A-425F-8ED1-F2F27E14B5F1}' />
+    </window>
+    <window class='worksheet' name='Año'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[cnt:bikeid:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-height' />
+      </viewpoint>
+      <simple-id uuid='{FB6D1675-A81B-48E8-965B-A984DD0043D7}' />
+    </window>
+    <window class='worksheet' name='Tendencias'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[cnt:bikeid:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4F4F02F2-EC99-4BBA-A53C-0E9B0B340E1B}' />
+    </window>
+    <window class='worksheet' name='Total Viajes'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8DC81E26-2790-4A1B-89ED-D92212F81E3F}' />
+    </window>
+    <window class='worksheet' name='Crecimiento'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B4C66443-5F59-4AC9-BA4B-28057EF07FB6}' />
+    </window>
+    <window class='worksheet' name='Edad'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A29E799B-AEDA-4CBF-ADA3-CF4FFBB63F99}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Suscripción'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[cnt:usertype:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F96C60EA-5502-4618-B355-3856B16468BF}' />
+    </window>
+    <window class='worksheet' name='Extra1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[avg:edad_actual:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7F876BCB-157B-476A-88CB-92EC99014C79}' />
+    </window>
+    <window class='worksheet' name='Extra2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.15vt3j60sl77rf1h9d1oz15uyfha].[cnt:bikeid:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{34E0DB12-7023-441D-A80C-38E7664A5B62}' />
+    </window>
+    <window class='dashboard' name='Dashboard'>
+      <viewpoints>
+        <viewpoint name='Año'>
+          <zoom type='fit-height' />
+        </viewpoint>
+        <viewpoint name='Crecimiento'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Día de la semana'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Edad'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Extra1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Extra2'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Suscripción'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Tendencias'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Total Viajes'>
+          <zoom type='fit-width' />
+        </viewpoint>
+      </viewpoints>
+      <active id='16' />
+      <simple-id uuid='{DAAF7959-46E8-4323-B224-DE79AEA9521F}' />
+    </window>
+  </windows>
+</workbook>

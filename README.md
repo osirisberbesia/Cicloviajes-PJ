@@ -72,6 +72,50 @@
 <br>
 
 ## Respuestas
+1.  Métricas de uso de un día promedio:
+
+-   Número de viajes que se realizan en promedio:
+ Para "hombres y mujeres", el total es 12,000,000 viajes. 
+ >Asumiendo que esto cubre un año, el promedio diario sería aproximadamente 32,877 viajes.
+-   Duración de un viaje:
+    -   Promedio: 15.8 minutos (mostrado en el dashboard, con las demás tendencias)
+
+2.  Métricas históricas:
+
+-   Total de viajes: 12,000,000 (para "hombres y mujeres")
+-   Total de viajes por usuarios:
+    -   Por género: 
+        - Hombres: 9,012,620
+        - Mujeres: 2,987,380
+    -   Por tipo de suscripción: 
+        - Cliente: 82,281
+        - Suscrito: 11,907,719
+
+### Generalidades
+
+1.  Predominancia masculina: Aproximadamente el 75% de los viajes son realizados por hombres.
+2.  Patrones semanales: El uso es más alto durante los días laborables que en los fines de semana.
+3.  Duración de viajes: La duración promedio de 15.8 minutos sugiere que muchos viajes son relativamente cortos, posiblemente para desplazamientos al trabajo o trayectos urbanos breves.
+4.  Distribución por edad: Parece haber una concentración de usuarios en el rango de edad de 20 a 40 años, basándome en el gráfico de barras de edad.
+5.  El grupo más numeroso es el de 30-40 años, con aproximadamente 502,459 usuarios.
+6.  Segundo grupo más grande: Los usuarios de 40-50 años, con cerca de 642,576 usuarios.
+7.  Tendencia general: Hay un aumento significativo desde los 20 años hasta el pico en los 30-40, seguido de una disminución gradual en los grupos de mayor edad.
+8.  Grupos de edad avanzada: Hay una presencia notable de usuarios en grupos de edad avanzada, aunque en menor cantidad. Por ejemplo, aún hay 14,799 usuarios en el grupo de 80-90 años.
+9.  Grupos más jóvenes: El grupo de 20-30 años muestra una participación considerable, pero menor que los grupos de 30-40 y 40-50.
+
+Recomendaciones para la nueva CEO:
+
+1.  Enfocarse en aumentar la participación femenina, ya que representan una minoría significativa de los usuarios actuales.
+2.  Considerar estrategias para mantener el uso durante los meses de invierno, cuando hay una clara disminución.
+3.  Explorar oportunidades para aumentar el uso durante los fines de semana, posiblemente mediante promociones o alianzas con eventos locales.
+4.  Analizar más a fondo los patrones de uso por edad para orientar mejor las campañas de marketing y la expansión del servicio.
+5.  Investigar por qué la duración promedio de los viajes es de 15.8 minutos y considerar si se pueden implementar estrategias para fomentar viajes más largos o frecuentes.
+6. Evaluar que está sucediendo con los viajes extremadamente breves y extremadamente largos, si es un error en el registro de los datos, o si son viajes que no se han terminado a tiempo en el sistema, o si los usuarios están usando las bicicletas como medio de transporte personal en periodos largos de tiempo.
+7. Orientar estrategias de marketing hacia los grupos de edad más activos.
+8. Identificar oportunidades para aumentar la participación en grupos de edad menos representados.
+9. Adaptar el servicio para satisfacer las necesidades de diferentes grupos etarios.
+10. Planificar expansiones o modificaciones del servicio basadas en las preferencias de edad de los usuarios actuales.
+
 
 
 
