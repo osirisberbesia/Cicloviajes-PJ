@@ -1,0 +1,647 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0711.1636                               -->
+<workbook original-version='18.1' source-build='2024.2.1 (20242.24.0711.1636)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='bike_datos (datosciclo)' inline='true' name='federated.10viecu0tdakku15yf5b101htwqt' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='BigQuery' name='bigquery.1mkbg0y0cbdkud15u32f01q5qsr5'>
+            <connection CATALOG='cicloviajes-tecnica' EXECCATALOG='cicloviajes-tecnica' authentication='oauth' class='bigquery' connection-dialect='google-sql' project='cicloviajes-tecnica' schema='datosciclo' server-oauth='' username='berbesiag@gmail.com' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='bigquery.1mkbg0y0cbdkud15u32f01q5qsr5' name='bike_datos' table='[cicloviajes-tecnica.datosciclo].[bike_datos]' type='table'>
+          <columns>
+            <column datatype='date' date-parse-format='HH:mm:ss' name='trip_time' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='bigquery.1mkbg0y0cbdkud15u32f01q5qsr5' name='bike_datos' table='[cicloviajes-tecnica.datosciclo].[bike_datos]' type='table'>
+          <columns>
+            <column datatype='date' date-parse-format='HH:mm:ss' name='trip_time' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>bikeid</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[bikeid]</local-name>
+            <parent-name>[bike_datos]</parent-name>
+            <remote-alias>bikeid</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_D6C97238994747E3AC7766D8A3B669FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_station_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[start_station_id]</local-name>
+            <parent-name>[bike_datos]</parent-name>
+            <remote-alias>start_station_id</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_D6C97238994747E3AC7766D8A3B669FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_station_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[start_station_name]</local-name>
+            <parent-name>[bike_datos]</parent-name>
+            <remote-alias>start_station_name</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_D6C97238994747E3AC7766D8A3B669FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_station_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[end_station_id]</local-name>
+            <parent-name>[bike_datos]</parent-name>
+            <remote-alias>end_station_id</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_D6C97238994747E3AC7766D8A3B669FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_station_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[end_station_name]</local-name>
+            <parent-name>[bike_datos]</parent-name>
+            <remote-alias>end_station_name</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_D6C97238994747E3AC7766D8A3B669FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trip_time</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[trip_time]</local-name>
+            <parent-name>[bike_datos]</parent-name>
+            <remote-alias>trip_time</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_D6C97238994747E3AC7766D8A3B669FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_date_formatted</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[start_date_formatted]</local-name>
+            <parent-name>[bike_datos]</parent-name>
+            <remote-alias>start_date_formatted</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_D6C97238994747E3AC7766D8A3B669FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day_start</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[day_start]</local-name>
+            <parent-name>[bike_datos]</parent-name>
+            <remote-alias>day_start</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_D6C97238994747E3AC7766D8A3B669FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_moment</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[start_moment]</local-name>
+            <parent-name>[bike_datos]</parent-name>
+            <remote-alias>start_moment</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_D6C97238994747E3AC7766D8A3B669FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stop_date_formatted</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[stop_date_formatted]</local-name>
+            <parent-name>[bike_datos]</parent-name>
+            <remote-alias>stop_date_formatted</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_D6C97238994747E3AC7766D8A3B669FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day_stop</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[day_stop]</local-name>
+            <parent-name>[bike_datos]</parent-name>
+            <remote-alias>day_stop</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_D6C97238994747E3AC7766D8A3B669FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stop_moment</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[stop_moment]</local-name>
+            <parent-name>[bike_datos]</parent-name>
+            <remote-alias>stop_moment</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_D6C97238994747E3AC7766D8A3B669FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>birth_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[birth_year]</local-name>
+            <parent-name>[bike_datos]</parent-name>
+            <remote-alias>birth_year</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_D6C97238994747E3AC7766D8A3B669FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>edad_actual</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[edad_actual]</local-name>
+            <parent-name>[bike_datos]</parent-name>
+            <remote-alias>edad_actual</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_D6C97238994747E3AC7766D8A3B669FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[bike_datos]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_D6C97238994747E3AC7766D8A3B669FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>usertype</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[usertype]</local-name>
+            <parent-name>[bike_datos]</parent-name>
+            <remote-alias>usertype</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_D6C97238994747E3AC7766D8A3B669FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='bike_datos' datatype='table' name='[__tableau_internal_object_id__].[bike_datos_D6C97238994747E3AC7766D8A3B669FE]' role='measure' type='quantitative' />
+      <column caption='Bikeid' datatype='integer' name='[bikeid]' role='measure' type='quantitative' />
+      <column caption='Birth Year' datatype='integer' name='[birth_year]' role='dimension' type='quantitative' />
+      <column caption='Day Start' datatype='string' name='[day_start]' role='dimension' type='nominal' />
+      <column caption='Day Stop' datatype='string' name='[day_stop]' role='dimension' type='nominal' />
+      <column caption='Edad Actual' datatype='integer' name='[edad_actual]' role='measure' type='quantitative' />
+      <column caption='End Station Id' datatype='integer' name='[end_station_id]' role='dimension' type='ordinal' />
+      <column caption='End Station Name' datatype='string' name='[end_station_name]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Start Date Formatted' datatype='string' name='[start_date_formatted]' role='dimension' type='nominal' />
+      <column caption='Start Moment' datatype='string' name='[start_moment]' role='dimension' type='nominal' />
+      <column caption='Start Station Id' datatype='integer' name='[start_station_id]' role='dimension' type='ordinal' />
+      <column caption='Start Station Name' datatype='string' name='[start_station_name]' role='dimension' type='nominal' />
+      <column caption='Stop Date Formatted' datatype='string' name='[stop_date_formatted]' role='dimension' type='nominal' />
+      <column caption='Stop Moment' datatype='string' name='[stop_moment]' role='dimension' type='nominal' />
+      <column caption='Trip Time' datatype='string' name='[trip_time]' role='dimension' type='nominal' />
+      <column caption='Usertype' datatype='string' name='[usertype]' role='dimension' type='nominal' />
+      <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='es_ES' class='hyper' dbname='C:/Users/Oberb/OneDrive/Documentos/Laboratoria/EntrevistaTecnica/bike_datos.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='08/16/2024 07:16:33 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='bike_datos (datosciclo)' increment-value='%null%' refresh-type='create' rows-inserted='46949571' timestamp-start='2024-08-16 06:19:43.832' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>bikeid</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[bikeid]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bikeid</remote-alias>
+              <ordinal>0</ordinal>
+              <family>bike_datos</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21006</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_D6C97238994747E3AC7766D8A3B669FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start_station_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[start_station_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>start_station_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>bike_datos</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>945</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_D6C97238994747E3AC7766D8A3B669FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start_station_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[start_station_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>start_station_name</remote-alias>
+              <ordinal>2</ordinal>
+              <family>bike_datos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>994</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_D6C97238994747E3AC7766D8A3B669FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>end_station_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[end_station_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>end_station_id</remote-alias>
+              <ordinal>3</ordinal>
+              <family>bike_datos</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>953</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_D6C97238994747E3AC7766D8A3B669FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>end_station_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[end_station_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>end_station_name</remote-alias>
+              <ordinal>4</ordinal>
+              <family>bike_datos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>994</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_D6C97238994747E3AC7766D8A3B669FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trip_time</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[trip_time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trip_time</remote-alias>
+              <ordinal>5</ordinal>
+              <family>bike_datos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13404</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_D6C97238994747E3AC7766D8A3B669FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start_date_formatted</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[start_date_formatted]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>start_date_formatted</remote-alias>
+              <ordinal>6</ordinal>
+              <family>bike_datos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1610</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_D6C97238994747E3AC7766D8A3B669FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>day_start</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[day_start]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>day_start</remote-alias>
+              <ordinal>7</ordinal>
+              <family>bike_datos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_D6C97238994747E3AC7766D8A3B669FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>start_moment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[start_moment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>start_moment</remote-alias>
+              <ordinal>8</ordinal>
+              <family>bike_datos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_D6C97238994747E3AC7766D8A3B669FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stop_date_formatted</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[stop_date_formatted]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stop_date_formatted</remote-alias>
+              <ordinal>9</ordinal>
+              <family>bike_datos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1623</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_D6C97238994747E3AC7766D8A3B669FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>day_stop</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[day_stop]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>day_stop</remote-alias>
+              <ordinal>10</ordinal>
+              <family>bike_datos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_D6C97238994747E3AC7766D8A3B669FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stop_moment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[stop_moment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stop_moment</remote-alias>
+              <ordinal>11</ordinal>
+              <family>bike_datos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_D6C97238994747E3AC7766D8A3B669FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>birth_year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[birth_year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>birth_year</remote-alias>
+              <ordinal>12</ordinal>
+              <family>bike_datos</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>68</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_D6C97238994747E3AC7766D8A3B669FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>edad_actual</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[edad_actual]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>edad_actual</remote-alias>
+              <ordinal>13</ordinal>
+              <family>bike_datos</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>68</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_D6C97238994747E3AC7766D8A3B669FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>14</ordinal>
+              <family>bike_datos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_D6C97238994747E3AC7766D8A3B669FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>usertype</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[usertype]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>usertype</remote-alias>
+              <ordinal>15</ordinal>
+              <family>bike_datos</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bike_datos_D6C97238994747E3AC7766D8A3B669FE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:gender:nk]' type='palette'>
+            <map to='#8dc1f2'>
+              <bucket>&quot;male&quot;</bucket>
+            </map>
+            <map to='#ffcbe6'>
+              <bucket>&quot;female&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Costa Rica&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='bike_datos' id='bike_datos_D6C97238994747E3AC7766D8A3B669FE'>
+            <properties context=''>
+              <relation connection='bigquery.1mkbg0y0cbdkud15u32f01q5qsr5' name='bike_datos' table='[cicloviajes-tecnica.datosciclo].[bike_datos]' type='table'>
+                <columns>
+                  <column datatype='date' date-parse-format='HH:mm:ss' name='trip_time' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Hoja 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bike_datos (datosciclo)' name='federated.10viecu0tdakku15yf5b101htwqt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10viecu0tdakku15yf5b101htwqt'>
+            <column caption='Bikeid' datatype='integer' name='[bikeid]' role='measure' type='quantitative' />
+            <column-instance column='[bikeid]' derivation='Count' name='[cnt:bikeid:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.10viecu0tdakku15yf5b101htwqt].[cnt:bikeid:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{1A35248D-19AF-42EF-81F7-4C96628FE7A1}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Hoja 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.10viecu0tdakku15yf5b101htwqt].[cnt:bikeid:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>46949571</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.10viecu0tdakku15yf5b101htwqt].[cnt:edad_actual:qk]</field>
+            <field>[federated.10viecu0tdakku15yf5b101htwqt].[none:day_start:nk]</field>
+            <field>[federated.10viecu0tdakku15yf5b101htwqt].[none:start_moment:nk]</field>
+            <field>[federated.10viecu0tdakku15yf5b101htwqt].[none:trip_time:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7972B0EF-63C4-4C30-88B5-74A7FC05EFCC}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='24' name='Hoja 1' width='84'>
+      iVBORw0KGgoAAAANSUhEUgAAAFQAAAAYCAYAAABk8drWAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAE5UlEQVRYhe2ZbUxTVxjHf5SW0kJBKAhiAYkiCMqiqOhwZlMMvhE+SJhviw6iZmyGLItE
+      E5eOZNENt2xmuJk5dCHKogsyxYHElxCVqAiiY2YIDl9ARsVaSqHQV/Zh825dcczluiWmv0/3
+      POf/nHPuP+fcc+69XsPDw8N4EA3J/z2A5w2PoSLjMVRkPIaKjMdQkfEYKjIeQ0VGOprg9H3T
+      fzGO5wbPDBUZj6Ei4zFUZDyGiozHUJEZdZf/t1jMZr5+fxsOu53c93YhVyoB0HXc4cinO+lq
+      v4Wv0o/lOXkkL1zslt/R+hNHdn/Aw65O1OERZG7MJ3b6TBeNw2GnaMNq8nbtIVAdit1m5WTp
+      Pi6frMTpdJK8IJ1lOXnIFQq39o36Hj7f8iZGfY8QS1u1nrSV6zhUVEhzXa2LXuHnT07hLiJj
+      4zHouqk7Uc7Nq/VkbS4gOj5R0D0zQ6+dP4N63HiGBgaEmMmg52jxR7yStYbElHkMmQdc6v+s
+      O1V2gOz8rWgmxdFzv4Pj+z4jKCyckAiNoGtvvk7ExFihfKn6OBJvb7aXViCVSakt/4ba8jLS
+      1+a69dH3SE9CSiqZm/Ld6tYUaAGtUDboujlzpJSwyAkY9T18t/cTXsxYgSpI7Zb7TJb8w65O
+      2puvkZqxAi/JH13cbKxnQkISU+fOx0siQeGvIigs3C3/ka6bmMQkIidPwUsiYWxkNLMWLeX2
+      jR8EzWC/iYbTVUhlPkLMoPuFOUsykSsUeEtlzMvIwtxnxGzqc+tjwNhLQLC7ISNx4/IFEman
+      4uPrS6A6lNe1HxI3YzYSb283reiGDjudXKo+xsy0pShVAS513XfbmTJr7qht+AUE0tp0Bd29
+      2wDYrBbsViuPursETePZGia9MMMlT+oj58qpKhx2G8NOJ0Pmfsz9phENNRn0LrP9SZgMejrb
+      WohJTBpVCyIveYvZTGVJMelrc1EFqV2eTwA2i4WBvl5sVgtSqYyOthZqDpbw6tvbCAgOEXQh
+      ERo27dgtlGU+cuRKJVKZDIfDTtWBvcxcuJhxMZNobWoQdEvWbXTpz9dPhUQiQSaXu4111qJl
+      wvVgv4lzFYexDg2SsWGzS/z7/V+wLOcNFP6qf+SBqIa2XW+g8WwNDaerXeKtTfXkaIsIj47B
+      y0uCzOe3G4yKSyA4LBzDA52LoX9l2OmkramBuOQUutpvcfVsDXWV5UJ9c10tawq0TEt92SXv
+      YVcndpsNhd/fm6HwVzFnaSZVB/ZiGRwUNrGbV+vRxMaP+Kx8EqIaOnXufHZWnBHKRn0PJ0o+
+      J+utLciVSpT+Kiq/KiYkQkPo+Eg62lroN/YyVhPl0o7T4UB37zYh4yORSmVcrD6GvruLidOm
+      I1cq0ZZVCtpDRYUsz80jUB2KyaDHarEQPDac3p4HnCgpZs6STHx8fV3at5jNVJd+SfLCxWgm
+      TsZqsXDh2LeMCQ0TzLQODdHefI20VeueyoNntsuPRKgmipcysyndsR19dxchERqy87ei8Fdh
+      1PdQVlTI6gItgepQfrx4nnMVh7HbbURNnsLKd94Vjl5PYmhggENFheg67uCr9GNB9msk/T5r
+      LWYzB4u0pK1cT3R8Iinpyzm652M6f25FIvEWjliPuXW9Eb/AMW4r527LDfYXFmAxm13ij49c
+      XqP99fR8bXo6PG9KIvMrM+nCf9pTj50AAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
