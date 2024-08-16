@@ -53,16 +53,25 @@
 | Identificación de duplicados| Posterior a la limpieza de nulos, los datos totales fueron: 47.534.330, se exploró la eliminación de duplicados donde la unión de bikeid, starttime y stoptime no coincidiera. Dando como resultado 47.534.325 datos (solo 5 duplicados con las condiciones dadas) | [Exploración](SQL\exploracion_duplicados.sql) duplicados |
 | Analizar las variables con las que se va a trabajar y cambiar los datos según sea necesario| Se decide dejar por duera del estudio las siguientes variables: start_station_latitude, start_station_longitude, end_station_latitude, end_station_longitude, customer_plan      | [Consulta](SQL\cambio_datos.sql) de cambios de datos |
 | Clausulas Where | Por el peso y las limitaciones propias del uso gratuito se decide dejar por fuera, datos como: viajes mayores a 24 horas, personas con género desconocido y edad mayores a 90 años, obteniendo 46.949.571 resultados | [Query](SQL\clausulas_where.sql) |
-| Limite de datos | Debido a las limitaciones propias de la versión gratuita |d |
+| Limite de datos | Debido a las limitaciones propias de la versión gratuita y la publicación en Tableau Public, se limitaron las filas a 12.000.000 de datos. |![alt text](image.png) |
 | | | |
 
 
 <br>
 
 ## Creación de tablero
+
+[Link](https://public.tableau.com/app/profile/osiris.berbesia/viz/dashboard_17238310552130/Dashboard?publish=yes)
 <br>
 
 <br>
 
 ## Enlaces relevantes
+
+[City Bike](https://citibikenyc.com/homepage)
 <br>
+
+## Respuestas
+
+
+
