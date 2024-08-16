@@ -1,5 +1,7 @@
 # Proyecto Ciclo Viajes
 
+>[ Detalles del proyecto](proyecto.md)
+
 ## Datos esperados:
 1 - Métricas de uso de un día promedio
 * Número de viajes que se realizan en promedio
@@ -37,6 +39,12 @@
 | 13     | birth_year                  | INTEGER   | SI       |
 | 14     | gender                      | STRING    | SI       |
 | 15     | customer_plan               | STRING    | SI       |
+| | | | 
+
+<br>
+
+## Detalle de tareas y consultas SQL
+<br>
 
 
 | Tarea | Resultados           | Query      | 
@@ -46,4 +54,15 @@
 | Analizar las variables con las que se va a trabajar y cambiar los datos según sea necesario| Se decide dejar por duera del estudio las siguientes variables: start_station_latitude, start_station_longitude, end_station_latitude, end_station_longitude, customer_plan      | [Consulta](SQL\cambio_datos.sql) de cambios de datos |
 | Clausulas Where | Por el peso y las limitaciones propias del uso gratuito se decide dejar por fuera, datos como: viajes mayores a 24 horas, personas con género desconocido y edad mayores a 90 años, obteniendo 46.949.571 resultados | [Query](SQL\clausulas_where.sql) |
 | Limite de datos | Debido a las limitaciones propias de la versión gratuita |d |
-| d| d|d |
+| | | |
+
+
+<br>
+
+## Creación de tablero
+<br>
+
+<br>
+
+## Enlaces relevantes
+<br>
